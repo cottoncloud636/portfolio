@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%block title %}Resume{%endblock title%}
+{%load static%}
+
+{%block background-image%}{% static 'assets/img/ocean.jpg' %}{%endblock background-image%}
+{%block header-image%}{% static 'assets/img/mercury-motion.gif' %}{%endblock header-image%}
+
+
+
+{%block content%}
+<div class="resumecontainer">
+    
+    <iframe src="{% static 'assets/media/Resume.pdf' %}?zoom=120" title="resume page" class="resume"></iframe>
+</div>
+{%endblock content%}

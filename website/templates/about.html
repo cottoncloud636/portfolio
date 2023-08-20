@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+{%block title%}About{%endblock title%}
+{%load static%}
+
+{%block background-image %} {% static 'assets/img/milkyway.png' %} {%endblock background-image%}
+{%block header-image%} {% static 'assets/img/solar-system-motion.gif'%} {%endblock header-image%}
+
+
+{%block content%}
+<div class="outerp">
+    <div class="intro">
+        <h2> About me </h2>
+        <img src="{% static 'assets/img/star.png' %}" alt="star" class="star">
+    </div>
+    <div class="paragraph">
+        <p class="para">Thank you for clicking the About button. I am Xian (Natasha), a former Accountant 🤓 seeking for a career change in software development 😎. </p>
+        <p class="para">Switching from a complete different area to computer science is not easy at all! But I loved it. I love the challenge, the intensity and the curiosity of wanting to know the unknown. In order to achieve my goal, I went back to school and got my master degree in CS in Queens College of CUNY. As well as hard works on numerous days and nights. Spent quite some time confused until the haze has gradually dissipated. And I am so excited to show what I have done over the years and so excited to prove to others that I can contribute using what I mastered and what I know.</p>
+        <p class="para">Besides that, I also like to learn and feel different human languages. I speak English, Mandarin, some French and a few words of Russian. And I also maintain hobbies of most human being's: sleeeeep, coooook, day-dreeeeam etc....</p>
+        <p class="para">My go-to langauge is Java. I also know C++, Python, javascript, some Assembly. Framework include: Java Spring, Django.</p>
+    </div>
+</div>    
+
+<script src="{% static 'assets/js/main.js' %}"></script>
+{%endblock content%}

@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+{%block title %}Projects{% endblock title %}
+{%load static%}
+
+{%block background-image%}{% static 'assets/img/nebula.jpg' %}{%endblock background-image%}
+{%block header-image%}{% static 'assets/img/venus-motion.gif'%}{%endblock header-image%}
+
+{% block content %}
+<div class="btmcontainer">
+    <div class="subcontainer">
+        <div class="projectname">
+            <div class="leftcontainer">
+                <p>Click me!</p>
+            </div>
+            <div class="rightcontainer">
+                <h3>testing </h3>
+                
+                {% for project in projects %}{% comment %} the name "projects" here should be the same as in 
+                                            views.py: {'projects': projs} {% endcomment %}
+                
+                    <h3>{{project.name}}</h3>
+                    <a href="/projects/project/{{project.id}}"><img src="{{project.image}} " class="projectpicture"></a>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
